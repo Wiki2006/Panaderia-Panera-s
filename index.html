@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1628">
+  <meta name="description"
+    content="Panera's - Panadería y pastelería artesanal. Calidad y frescura en cada producto. Pan artesanal, pasteles y tortas especiales elaborados con amor y harina fresca.">
+  <meta name="keywords"
+    content="Panera's, panadería artesanal, pastelería, pan fresco, tortas personalizadas, productos artesanales">
+  <title>Panera's | Panadería y Pastelería Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <h1 class="logo__text">Panera's</h1>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="header__checkbox">
+      <label for="menu-toggle" class="header__toggle" aria-label="Abrir menú">
+        <span class="toggle__bar"></span>
+        <span class="toggle__bar"></span>
+        <span class="toggle__bar"></span>
+      </label>
+
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#principal" class="nav__link nav__link--active">PRINCIPAL</a></li>
+          <li class="nav__item"><a href="#productos" class="nav__link">PRODUCTOS</a></li>
+          <li class="nav__item"><a href="#nosotros" class="nav__link">QUIÉNES SOMOS</a></li>
+          <li class="nav__item"><a href="#ubicacion" class="nav__link">UBICACIÓN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main">
+    <!-- HERO -->
+    <section id="principal" class="hero">
+      <div class="hero__container">
+        <p class="hero__breadcrumb">NUESTROS PRODUCTOS</p>
+        <h2 class="hero__title">Horneado con amor, cada día.</h2>
+        <p class="hero__description">
+          Elaboramos nuestros productos artesanalmente cada mañana para garantizar la frescura que mereces.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="productos">
+      <div class="productos__container">
+        <header class="productos__header">
+          <p class="productos__breadcrumb">NUESTRA VITRINA</p>
+          <h2 class="productos__title">Productos recién horneados</h2>
+          <p class="productos__subtitle">Desliza hacia la derecha para descubrir más de cada categoría.</p>
+        </header>
+
+        <!-- PANES -->
+        <div class="categoria">
+          <h3 class="categoria__title">Panes</h3>
+
+          <div class="subcategoria">
+            <h4 class="subcategoria__title">Panes Dulces</h4>
+            <div class="carrusel">
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-dulces/pan-de-frutas-01.png" alt="Pan de frutas" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de frutas</h5>
+                <p class="producto-card__description">Trenzado con frutas confitadas y azúcar.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-dulces/pan-de-queso-con-guayaba-01.png" alt="Pan de queso con guayaba"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de queso con guayaba</h5>
+                <p class="producto-card__description">Pan trenzado de queso relleno de guayaba.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-dulces/pan-de-tunja-01.png" alt="Pan de tunja" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de tunja</h5>
+                <p class="producto-card__description">Pan dulce tradicional, esponjoso y dorado.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-dulces/pan-pinita-01.png" alt="Pan piñita" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan piñita</h5>
+                <p class="producto-card__description">Pan dulce en rama espolvoreado con azúcar.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-dulces/panecillos-con-azucar-01.png" alt="Panecillos con azúcar"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan piñita</h5>
+                <p class="producto-card__description">Deliciosos panecillos unidos cubiertos de azúcar.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-dulces/pan-trenzado-glaseado-01.png" alt="Pan trenzado glaseado"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan trenzado glaseado</h5>
+                <p class="producto-card__description">Barra trenzada con glaseado brillante.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="subcategoria">
+            <h4 class="subcategoria__title">Panes Salados</h4>
+            <div class="carrusel">
+              <article class="producto-card">
+                <div class="producto-card__badge producto-card__badge--popular">POPULAR</div>
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-canilla-01.png" alt="Pan canilla" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan canilla</h5>
+                <p class="producto-card__description">Clásicas barras crujientes recién horneadas.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-frances-01.png" alt="Pan francés" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan francés</h5>
+                <p class="producto-card__description">Bollitos salados de corteza dorada.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__badge producto-card__badge--popular">POPULAR</div>
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-de-queso-01.png" alt="Pan de queso" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de queso</h5>
+                <p class="producto-card__description">Pan dorado relleno de queso fundido.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-de-pizza-01.png" alt="Pan de pizza" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de pizza</h5>
+                <p class="producto-card__description">Relleno de jamón, queso y orégano.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-salado-al-ajillo-01.png" alt="Pan salado al ajillo"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan salado al ajillo</h5>
+                <p class="producto-card__description">Baguettes con semillas, hierbas y ajo.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/enrollados-de-jamon-y-queso-01.png" alt="Enrollados de jamón y queso"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Enrollados de jamón y queso</h5>
+                <p class="producto-card__description">Rollitos de pan con jamón y queso.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-relleno-de-queso-01.png" alt="Pan relleno de queso"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan relleno de queso</h5>
+                <p class="producto-card__description">Pan horneado con corazón de queso.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-con-jamon-y-queso-01.png" alt="Pan con jamón y queso"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan con jamón y queso</h5>
+                <p class="producto-card__description">Pan de sésamo relleno de jamón y queso.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-canilla-en-racimo-01.png" alt="Pan canilla en racimo"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan canilla en racimo</h5>
+                <p class="producto-card__description">Panecillos salados alargados para compartir.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-trenzado-con-queso-01.png" alt="Pan trenzado con queso"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan trenzado con queso</h5>
+                <p class="producto-card__description">Barra trenzada cubierta de queso gratinado.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-de-queso-al-horno-01.png" alt="Pan de queso al horno"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de queso al horno</h5>
+                <p class="producto-card__description">Panecillos con queso gratinado.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-campesino-01.png" alt="Pan campesino" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan campesino</h5>
+                <p class="producto-card__description">Hogaza redonda rústica con harina.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-tajado-01.png" alt="Pan tajado" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de sandwich</h5>
+                <p class="producto-card__description">Pan blanco rebanado, ideal para sándwich.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pan-con-ajonjoli-01.png" alt="Pan con ajonjolí"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan de sandwich con ajonjolí</h5>
+                <p class="producto-card__description">Pan cubierto de semillas de sésamo.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/baguettes-rusticas-01.png" alt="Baguette rústica"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Baguette rústica</h5>
+                <p class="producto-card__description">Baguette artesanal espolvoreada con harina.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/baguettes-con-sesamo-01.png" alt="Baguette con sésamo"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Baguette con sésamo</h5>
+                <p class="producto-card__description">Baguette con ajonjolí y hierbas.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/panecillos-blancos-01.png" alt="Panecillos blancos"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pan frances</h5>
+                <p class="producto-card__description">Deliciosos panecillos frescos.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/pastelito-de-hojaldre-01.png" alt="Pastelito de hojaldre"
+                    class="producto-card__image" loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Pastelito de hojaldre</h5>
+                <p class="producto-card__description">Hojaldre rectangular dorado y crujiente.</p>
+              </article>
+
+              <article class="producto-card">
+                <div class="producto-card__icon">
+                  <img src="img/panes-salados/rollo-de-pan-01.png" alt="Rollo de pan" class="producto-card__image"
+                    loading="lazy">
+                </div>
+                <h5 class="producto-card__title">Baguette</h5>
+                <p class="producto-card__description">Rollo de pan frances.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- TORTAS -->
+        <div class="categoria">
+          <h3 class="categoria__title">Tortas</h3>
+          <div class="carrusel">
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/tortas/torta-marmoleada-01.png" alt="Torta marmoleada" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Torta marmoleada</h5>
+              <p class="producto-card__description">Bizcocho esponjoso con veteado de chocolate.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__badge producto-card__badge--especial">ESPECIAL</div>
+              <div class="producto-card__icon">
+                <img src="img/tortas/torta-de-chocolate-01.png" alt="Torta de chocolate" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Torta de chocolate</h5>
+              <p class="producto-card__description">Porción húmeda cubierta de chocolate.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- PASTELERÍA -->
+        <div class="categoria">
+          <h3 class="categoria__title">Pastelería</h3>
+          <div class="carrusel">
+            <article class="producto-card">
+              <div class="producto-card__badge producto-card__badge--nuevo">NUEVO</div>
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/dona-con-chocolate-01.png" alt="Dona con chocolate"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Dona con chocolate</h5>
+              <p class="producto-card__description">Dona con cobertura de chocolate y granas.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/donitas-azucaradas-01.png" alt="Donitas azucaradas"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Donitas azucaradas</h5>
+              <p class="producto-card__description">Donitas espolvoreadas con azúcar glass.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/muffins-de-chocolate-01.png" alt="Muffins de chocolate"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Muffins de chocolate</h5>
+              <p class="producto-card__description">Muffins esponjosos con chispas de chocolate.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/galletitas-con-granillas-01.png" alt="Galletas con granillas"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Galletas con granillas</h5>
+              <p class="producto-card__description">Bandeja de galletas con granillas de colores.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/galletas-surtidas-01.png" alt="Galletas surtidas" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Galletas polvorosas</h5>
+              <p class="producto-card__description">Deliciosas galletas horneadas</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/cortaditos-01.png" alt="Cortaditos" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Cortaditos</h5>
+              <p class="producto-card__description">Porciones de bizcocho con relleno.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/pasteleria/donita-azucarada-01.png" alt="Donita azucarada" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Donita azucarada</h5>
+              <p class="producto-card__description">Donita frita cubierta con azúcar glass.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/pan-de-chocolate-01.png" alt="Napolitano" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Napolitano</h5>
+              <p class="producto-card__description">Delicioso pan con relleno de chocolate cubierto de chispas de
+                chocolate.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/pan-de-colores-01.png" alt="Napolitano2" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Napolitano</h5>
+              <p class="producto-card__description">Delicioso pan con relleno de chocolate cubierto de chispas de
+                colores.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__badge producto-card__badge--popular">POPULAR</div>
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/pan-jumbo-01.png" alt="Pan jumbo" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Pan jumbo</h5>
+              <p class="producto-card__description">Pan alargado relleno de crema y chocolate.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/bollo-de-crema-01.png" alt="Bollo de crema" class="producto-card__image"
+                  loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Bollo de crema</h5>
+              <p class="producto-card__description">Bollo relleno de crema pastelera.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/palmera-de-hojaldre-01.png" alt="Palmera de hojaldre"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Palmera de hojaldre</h5>
+              <p class="producto-card__description">Hojaldre en espiral cubierto con azúcar.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/hojaldre-azucarado-01.png" alt="Hojaldre azucarado"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Hojaldre azucarado</h5>
+              <p class="producto-card__description">Hojaldre crujiente con azúcar por encima.</p>
+            </article>
+
+            <article class="producto-card">
+              <div class="producto-card__icon">
+                <img src="img/panes-dulces/hojaldre-de-chocolate-01.png" alt="Pie de guayaba"
+                  class="producto-card__image" loading="lazy">
+              </div>
+              <h5 class="producto-card__title">Pie de guayaba</h5>
+              <p class="producto-card__description">Delicioso pastelito relleno de guayaba</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="nosotros" class="nosotros">
+      <div class="nosotros__container">
+        <div class="nosotros__image-wrapper">
+          <div class="nosotros__image-placeholder">
+            <img src="img/panes-salados/pan-campesino-01.png" alt="Pan artesanal de Panera's"
+              class="nosotros__illustration">
+          </div>
+          <div class="nosotros__badge">
+            <span class="badge__text">100%<br>ARTESANAL</span>
+          </div>
+        </div>
+
+        <div class="nosotros__content">
+          <h2 class="nosotros__title">
+            Más que una panadería, <span class="nosotros__title--highlight">un lugar de encuentro</span>
+          </h2>
+          <p class="nosotros__text">
+            Desde nuestros inicios, hemos cultivado más que masa madre: cultivamos vínculos con nuestra comunidad.
+            Creemos en el amor por el pan bien hecho, en ingredientes frescos y naturales, y en respetar los tiempos de
+            fermentación que cada receta merece.
+          </p>
+          <p class="nosotros__text">
+            Cada pieza que sale de nuestro horno lleva el cuidado de manos expertas y la pasión de generaciones
+            dedicadas al arte de la panadería. Porque sabemos que el verdadero sabor se construye con tiempo, paciencia
+            y amor.
+          </p>
+          <div class="nosotros__tags">
+            <span class="tag">♦ Ingredientes frescos</span>
+            <span class="tag">♦ Recetas artesanales</span>
+            <span class="tag">♦ Horneado diario</span>
+            <span class="tag">♦ Con amor familiar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="ubicacion">
+      <div class="ubicacion__container">
+        <div class="ubicacion__header">
+          <p class="ubicacion__breadcrumb">DÓNDE ENCONTRARNOS</p>
+          <h2 class="ubicacion__title">Visítanos</h2>
+          <p class="ubicacion__subtitle">
+            Te esperamos con el pan recién salido del horno y el café listo.
+          </p>
+        </div>
+
+        <div class="ubicacion__content">
+          <div class="ubicacion__info">
+            <div class="info-item">
+              <div class="info-item__icon">📍</div>
+              <div class="info-item__content">
+                <h3 class="info-item__title">Dirección</h3>
+                <p class="info-item__text">Calle Principal #123<br>Tu Ciudad, País</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon">🕐</div>
+              <div class="info-item__content">
+                <h3 class="info-item__title">Horario de atención</h3>
+                <p class="info-item__text">
+                  <strong>Lunes — Viernes:</strong> 6:00 am — 8:00 pm<br>
+                  <strong>Sábados y Domingos:</strong> 6:00 am — 2:00 pm
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-item__icon">📞</div>
+              <div class="info-item__content">
+                <h3 class="info-item__title">Teléfono / WhatsApp</h3>
+                <p class="info-item__text">
+                  <a href="tel:+000000000000" class="info-item__link">+00 000 000 0000</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <h3 class="info-item__title">Redes sociales</h3>
+              <div class="social-links">
+                <a href="https://wa.me/000000000000" target="_blank" rel="noopener noreferrer"
+                  class="social-link">WhatsApp</a>
+                <a href="https://instagram.com/paneras" target="_blank" rel="noopener noreferrer"
+                  class="social-link">Instagram</a>
+                <a href="https://facebook.com/paneras" target="_blank" rel="noopener noreferrer"
+                  class="social-link">Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="ubicacion__map">
+            <div class="map-container">
+              <div class="map-placeholder">
+                <div class="map-pin">📍</div>
+                <p class="map-label">Panera's — Tu Ciudad</p>
+              </div>
+              <a href="https://maps.app.goo.gl/e5KPZiz4AhXhAvXV7?g_st=it" target="_blank" rel="noopener noreferrer"
+                class="map-button">
+                ABRIR EN GOOGLE MAPS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <h3 class="footer__logo">Panera's</h3>
+          <p class="footer__tagline">
+            Calidad y Frescura en cada producto.<br>Panadería y Pastelería Artesanal.
+          </p>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__title">SECCIONES</h4>
+          <ul class="footer__links">
+            <li><a href="#principal" class="footer__link">Principal</a></li>
+            <li><a href="#productos" class="footer__link">Productos</a></li>
+            <li><a href="#nosotros" class="footer__link">Quiénes Somos</a></li>
+            <li><a href="#ubicacion" class="footer__link">Ubicación</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__title">PRODUCTOS</h4>
+          <ul class="footer__links">
+            <li><a href="#productos" class="footer__link">Panes</a></li>
+            <li><a href="#productos" class="footer__link">Tortas</a></li>
+            <li><a href="#productos" class="footer__link">Pastelería</a></li>
+            <li><a href="#productos" class="footer__link">Pedidos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h4 class="footer__title">CONTACTO</h4>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/000000000000" class="footer__link">WhatsApp</a></li>
+            <li><a href="https://instagram.com" class="footer__link">Instagram</a></li>
+            <li><a href="https://facebook.com" class="footer__link">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Panera's. Todos los derechos reservados.</p>
+        <p class="footer__credit">Hecho con <span class="footer__heart">♥</span> y harina fresca.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
