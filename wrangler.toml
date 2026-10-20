@@ -1,5 +1,6 @@
 name = "panaderia-panera-s"
 compatibility_date = "2026-10-15"
+account_id = "ab64078d392dae383a5028e2373162d6"
 workers_dev = true
 
 [assets]

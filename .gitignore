@@ -1,0 +1,18 @@
+# Node / Wrangler
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+package-lock.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Backups
+*.zip
+*.bak
