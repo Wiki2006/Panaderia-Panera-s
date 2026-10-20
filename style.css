@@ -166,7 +166,7 @@ strong {
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-md);
   z-index: 1000;
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-sm) 0;
 }
 
 .header__container {
@@ -178,11 +178,34 @@ strong {
   align-items: center;
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  text-decoration: none;
+}
+
+.header__logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 0 10px rgba(212, 165, 116, 0.25);
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.header__logo:hover .header__logo-img {
+  transform: scale(1.05);
+}
+
 .logo__text {
   font-family: var(--font-secondary);
   font-size: var(--font-size-xl);
   color: var(--color-text-primary);
   margin-bottom: 0;
+  line-height: 1;
 }
 
 .header__checkbox,
@@ -925,6 +948,15 @@ strong {
     --container-padding: 1.25rem;
     --spacing-3xl: 4rem;
     --spacing-2xl: 3rem;
+  }
+
+  .header__logo-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo__text {
+    font-size: 1.25rem;
   }
 
   .producto-card {
