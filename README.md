@@ -46,8 +46,8 @@ Proyecto Panera/
 
 ## 🚀 Despliegue automático
 
-Cada `git push` a la rama `main` dispara **GitHub Actions**, que instala Wrangler y
-publica el sitio en Cloudflare Workers.
+Cada `git push` a la rama `main` dispara **GitHub Actions**, que publica el sitio
+en Cloudflare Workers con la acción oficial `cloudflare/wrangler-action`.
 
 ```
 git add .
@@ -55,8 +55,20 @@ git commit -m "descripcion del cambio"
 git push origin main
 ```
 
-El workflow se encuentra en `.github/workflows/deploy.yml` y necesita el secreto
-`CLOUDFLARE_API_TOKEN` en **Settings → Secrets and variables → Actions** del repositorio.
+El workflow está en `.github/workflows/deploy.yml` y usa dos secretos del repositorio
+(**Settings → Secrets and variables → Actions**):
+
+| Secreto | Valor |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | Token de API de Cloudflare con permiso **Workers Scripts: Edit** |
+| `CLOUDFLARE_ACCOUNT_ID` | `ab64078d392dae383a5028e2373162d6` (también está en `wrangler.toml`) |
+
+> Para crear el token: **Cloudflare → Perfil → API Tokens → Create Token** →
+> plantilla *Edit Cloudflare Workers*. Ese token es el único dato sensible;
+> si se filtra, revócalo desde el mismo panel.
+
+Si el push falla, revisa **Actions → Deploy to Cloudflare Workers** en GitHub:
+el log muestra exactamente qué paso falló.
 
 ### Despliegue manual (opcional)
 
